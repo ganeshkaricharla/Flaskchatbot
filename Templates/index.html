@@ -5,7 +5,7 @@
 body
 {
 font-family: Garamond;
-background-color: white;
+background-color:#cdd6cb;
 }
 h1
 {
@@ -27,10 +27,11 @@ text-align: center;
 border :2px solid black;
 width: 70%;
 margin:0px 15%;
+height:100%;
 }
 #chatbox
 {
-background-color: white;
+background-color: #cdd6cb;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
@@ -43,26 +44,15 @@ width: 100%;
 margin-top: 60px;
 }
 #textInput {
-width: 87%;
+width: 100%;
 border: none;
-border-bottom: 3px solid #009688;
+border: 1px solid green;
+border-radius:5%;
 font-family: monospace;
 font-size: 17px;
+background-color:#fff4eb;
 }
-#buttonInput {
-padding: 3px;
-color:green;
-background-color:red;
-font-family: monospace;
-font-size: 17px;
-background-color: #4CAF50; /* Green */
-border: none;
-color: white;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-border-radius: 20%;
-}
+
 .userText {
 color: white;
 font-family: monospace;
@@ -76,14 +66,14 @@ padding: 10px;
 border-radius: 2px;
 }
 .botText {
-color: white;
+color: black;
 font-family: monospace;
 font-size: 17px;
 text-align: left;
 line-height: 30px;
 }
 .botText span {
-background-color: #EF5350;
+background-color:#bce8b3;
 padding: 10px;
 border-radius: 2px;
 }
@@ -103,8 +93,8 @@ width: 300px;
 <p class="botText"><span>Hi! I'm Meena,How can i Help?.</span></p>
 </div>
 <div id="userInput">
-<input id="textInput" type="text" name="msg" placeholder="Message">
-<input id="buttonInput" type="submit" value="Send">
+<input id="textInput" type="text" name="msg" placeholder="Type your Message here">
+
 </div>
 <script>
 function getBotResponse() {
